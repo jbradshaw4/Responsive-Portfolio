@@ -1,0 +1,265 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-size: 18px;
+	font-family: 'Arial','Helvetica Neue',Helvetica,sans-serif;
+	color: #777777;
+	line-height: 25px;
+	background-image: url(../images/cork-wallet.png);
+
+
+	
+}
+/* this standardizes all containers in html*/
+.container {
+	width: 100%;
+	max-width: 960px;
+	margin: 0 auto;
+	clear: both;
+}
+
+#header {
+	background: #ffffff;
+	overflow: auto;
+	border-bottom: 2px solid #cccccc;
+}
+/*my name in the header*/
+#name {
+	width: 250px;
+	height: 90px;
+	background: #4aaaa5;
+	float: left;
+	font-family: 'Georgia',Times,Times New Roman,serif;
+	line-height: 90px;
+	color: #ffffff;
+	font-size: 30px;
+	text-decoration: none;
+	text-align: center;
+}
+/*about portfolio contact nav portion*/
+.nav{
+	float: right;
+	margin-top: 25px;
+	padding-right: 50px;
+	height: 25px;	
+}
+/*this enabled me to line the nav links properly*/
+.nav a {
+	color: #999999;
+	display: inline-block;
+	text-decoration: none;
+}
+/*I had to style the vertical lines separating the nav links*/
+li{display: inline-block;
+	border-right: 1px solid #cccccc;
+	padding: 5px;
+}
+/*this removes the last border-right*/
+#last-line {
+	border-right: none;
+}
+/*this container houses the bio container and sidebar (bio/portfolio
+/connect/contact boxes*/
+#big-container {
+
+	margin-top: 50px;
+}
+/*this is specifc to the bio/portolio/contact container*/
+.bio-container {
+	width: 650px;
+	background: #ffffff;
+	float: left;
+	border: 1px solid #cccccc;
+	margin-bottom: 40px;
+	
+}
+p{	margin-left: 10px;
+	
+}
+/*this styles all the h1 tags- About Me- Portfolio- Contact*/
+h1{
+	color: #4aaaa5;
+	font-size: 30px;
+	font-family: 'Georgia',Times,Times New Roman,serif;
+	margin: 20px 10px 15px 10px;
+	font-weight: 700;
+	border-bottom: 2px solid #cccccc;
+	padding: 15px;
+}
+
+
+
+#connect{ 
+	margin-top: 15px;
+	margin-bottom: 35px;
+	text-align: center;
+	color: #4aaaa5;
+	font-size: 22px;
+	font-weight: 700;
+	font-family: 'Georgia',Times,Times New Roman,serif;
+
+
+}
+
+.sidebar   {
+	margin-left: 5px;
+	width: 270px;
+	background: #ffffff;
+	float: right;
+	border: 1px solid #cccccc;
+}
+.gallery {
+	margin-left: 30px;
+	margin-top: 20px;
+	margin: 20 0 25;
+	float: left;
+	overflow: auto;
+	position: relative;
+}
+
+
+}
+.gallery img {
+	width: 100%;
+	border: 0 none;
+	opacity: .8;
+}
+
+h3 {
+	background: #4aaaa5;
+	font-family: 'Georgia',Times,Times New Roman,serif;
+	color: #ffffff;
+	font-size: 20px;
+	text-decoration: none;
+	text-align: center;
+	line-height: 30px;
+	padding: 10px;
+}
+.gallery h3 {
+	border: bottom;
+	position: absolute;
+	width: 100%;
+	bottom: 20px;
+	padding: 15px;
+	font-weight: 300;
+}
+
+form,textarea{
+	margin-left: 20px;
+}
+
+#footer{
+	padding:30px;
+	color: #ffffff;
+	text-align: center;
+	font-size: 12px;
+	width: 100%;
+	height: 90px;
+	background: #666666;
+	overflow: auto;
+	border-top: 5px solid #4aaaa5;
+}
+
+@media screen and (max-width: 980px) {
+     #name {  
+      margin-left: 82px;
+    }
+ 
+    .bio-container {
+      width: 50%;
+      margin: 0 40px 0 82px;
+    }
+    
+    .sidebar {
+      margin-right: 20px;
+      width: 29%;
+
+    }
+ 
+
+}
+
+
+@media screen and (max-width: 768px){
+
+ 	#name {  
+      margin-left: 82px;
+    }
+ 
+	.nav {
+      margin-right: 100px;
+    }
+
+
+	.bio-container {
+      width: 85%;
+      margin-top:20px;
+      margin-left: 53px;
+      margin-bottom: 20px;
+
+    }
+    
+	.sidebar {
+      width: 100%;
+      margin-top: 20px;
+     margin-right: 63px;
+    }
+
+}
+
+@media screen and (max-width: 640px) {
+     
+    #name {
+      width:100%;
+      margin-left: 0px;
+      margin-bottom: 30px;
+    }
+
+    .nav {
+      width: 100%;
+      text-align: center;
+      margin-bottom: 10px;
+      margin-top: -20px;
+    }
+
+    .gallery {
+      width: 100%;
+    }
+
+
+    .bio-container {
+      width: 100%;
+      margin: 0%;
+      margin-top: -5%;
+    }
+    
+    .sidebar {
+      width: 100%;
+      margin-right: auto;
+      margin-bottom: 20px;
+    }
+    #connect {
+    	margin-right: 65%
+    }
+
+    h1 {
+      text-align: left;
+    }
+
+    ul {
+    	margin-left: 45%;
+
+    }
+    
+
+
+    #footer { 
+    text-align: center; 
+   
+  	}
+
+}
+
+

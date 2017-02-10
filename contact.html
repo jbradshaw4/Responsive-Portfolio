@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Basic Portfolio</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="css/reset.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	
+	<!--the style tag is to wrap bio text around pic-->
+	<style>
+		.TextWrap {
+		float: left;
+		margin: 10px;
+		}
+	</style>
+</head>
+<body>
+<!--the header creates the top banner with my name and intra site links-->
+<!--the header creates the top banner with my name and intra site links-->
+	<div id="header">
+<!--the container holds my name and the nav boxes-->
+		<div class="container">
+	
+			<a href="index.html" id="name">Jake Bradshaw</a>
+<!--the nav holds the intra site links to each page-->
+			<div class="nav">
+				<ul>
+					<li><a href="index.html">About</a></li>
+					<li><a href="portfolio.html">Portfolio</a></li>
+					<li id="last-line"><a href="contact.html">Contact</a></li>
+
+				</ul>
+
+			</div>	
+		</div>
+	</div>	
+<!--bio is the main section with the paragraph and git, linked and stack links-->
+	
+<div id="big-container" class="container">
+	<div class="bio-container">
+		<h1>Contact</h1>
+		 
+			<form action="form-to-email.php" method="post" name="jbradshaw4@cfl.rr.com" name="submit">
+				Name:<br>
+				<input type="text" name="name" value="">
+				<br>
+				Email:<br>
+				<input type="text" name="email" value="">
+				<br>
+				Message:<br>
+			</form>	
+
+				<textarea rows="15" cols="50" name="comment" form="usrform"></textarea>
+			<form action="form-to-email.php" method="post" name="jbradshaw4@cfl.rr.com" name="submit">	
+				<input type="submit" name="message" value="Submit">
+			</form>		
+				
+	</div>
+<!--sidebar section with the social media business icon links.-->
+	<div class="sidebar">
+		
+			<div id="connect">
+				<h2>Connect with Me</h2>
+				<hr width="195px">
+						
+			<a href="https://github.com/jbradshaw4" target="_blank"><img src="images/github-128.png" alt "github icon" width="60" height="65"></a>
+		
+			<a href="https://www.linkedin.com/profile/preview?trk=prof-0-sb-preview-primary-button&locale=en_US" target="_blank"><img src="images/square-linkedin-128.png" alt "linkedin icon" width="60" height="65"></a>
+
+			<a href="http://stackexchange.com/users/9545111/jake" target="_blank"><img src="images/stackoverflow-square-social-media-128.png" alt "stackoverflow icon" width="60" height="65"></a>
+			</div>
+		</div>	
+</div>	
+		
+			
+		<div id="footer">
+			<p>© Copyright 2016 Jake Bradshaw</p>
+		</div>
+
+
+</body>	
+		
+</html>
